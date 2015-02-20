@@ -4,7 +4,7 @@
 // CurrentTick returns milliseconds in a long integer.
 // MotorRotationCount returns degrees in a long integer.
 #define MOTOR OUT_A
-//#define FULL_SPEED 60
+#define FULL_SPEED 60
 #define DEG_TO_CMPM 166.6667*17.5 // converts degrees per millisecond to CMPM
 int setpoint;
 long prev_time;
@@ -23,7 +23,7 @@ while (true)
    else if (ButtonPressed (BTNRIGHT, false))                                    // börv ökar om man tryckeer på höger pil
    {
     Acquire(moveMutex);
-    setpoint += 1;
+    setpoint += 10;
    }
    ClearLine(LCD_LINE3);
    NumOut(0, LCD_LINE3, setpoint, false);
@@ -37,21 +37,17 @@ task drive()
  {
    Acquire(moveMutex);
 
-   //Hast.räknare
+   prev_time = CurrentTick();
+   OnFwd(OUT_AC, FULL_SPEED);
+   Wait(MS_500); // update display every 0.5 seconds
    long time = CurrentTick() - prev_time;
    long degrees = MotorRotationCount(MOTOR) - prev_degrees;
    float cmpm = degrees*DEG_TO_CMPM/time;
    prev_degrees = MotorRotationCount(MOTOR);
    NumOut(0, LCD_LINE2, cmpm, false);
-   prev_time = CurrentTick();
-   
-   //Reglering
    float error = setpoint - cmpm;
-   NumOut(0, LCD_LINE4, error, false);                                          //bugtest
-   long out = 200 * error;
-   OnFwd(OUT_AC, out);
-   Wait(MS_500);                                                                // update display every 0.1 seconds
-
+   NumOut(0, LCD_LINE4, error, false);
+   
    Release(moveMutex);
  }
 }
