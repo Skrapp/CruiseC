@@ -1,0 +1,59 @@
+// Display RPM of motor attached to the port MOTOR while running at full speed.
+// The program runs continously until stopped by pressing the gray NXT button.
+// Requires NXT firmware 1.28 or later (uses floating point arithmetic).
+// CurrentTick returns milliseconds in a long integer.
+// MotorRotationCount returns degrees in a long integer.
+#define MOTOR OUT_A
+#define FULL_SPEED 60
+#define DEG_TO_CMPM 166.6667*17.5 // converts degrees per millisecond to CMPM
+int setpoint;
+long prev_time;
+long prev_degrees = 0;
+mutex moveMutex;
+
+task button()
+{
+while (true)
+ {
+   if (ButtonPressed (BTNLEFT, false))                                           // börv minskar om man tryckeer på vänster pil
+   {
+    Acquire(moveMutex);
+    setpoint -= 10;
+    ClearLine(LCD_LINE3);
+    //NumOut(0, LCD_LINE3, setpoint, false);
+
+   }
+   else if (ButtonPressed (BTNRIGHT, false))                                    // börv ökar om man tryckeer på höger pil
+   {
+    Acquire(moveMutex);
+    setpoint += 10;
+    ClearLine(LCD_LINE3);
+   // NumOut(0, LCD_LINE3, setpoint, false);
+   }
+   NumOut(0, LCD_LINE3, setpoint, false);
+   Wait (MS_100);
+   Release(moveMutex);
+   }
+}
+task drive()
+{
+ while (true)
+ {
+   Acquire(moveMutex);
+   
+   prev_time = CurrentTick();
+   OnFwd(OUT_AC, FULL_SPEED);
+   Wait(MS_500); // update display every 0.5 seconds
+   long time = CurrentTick() - prev_time;
+   long degrees = MotorRotationCount(MOTOR) - prev_degrees;
+   float cmpm = degrees*DEG_TO_CMPM/time;
+   prev_degrees = MotorRotationCount(MOTOR);
+   NumOut(0, LCD_LINE2, cmpm, false);
+   
+   Release(moveMutex);
+ }
+}
+task main()
+{
+ Precedes(button, drive);
+}
