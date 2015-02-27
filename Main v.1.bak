@@ -4,9 +4,11 @@
 // CurrentTick returns milliseconds in a long integer.
 // MotorRotationCount returns degrees in a long integer.
 #define MOTOR OUT_A
-#define FULL_SPEED 60
+//#define FULL_SPEED 60
 #define DEG_TO_CMPM 166.6667*17.5 // converts degrees per millisecond to CMPM
 int setpoint;
+float error_area = 0;
+float prev_error = 0;
 long prev_time;
 long prev_degrees = 0;
 mutex moveMutex;
@@ -18,12 +20,12 @@ while (true)
    if (ButtonPressed (BTNLEFT, false))                                           // börv minskar om man tryckeer på vänster pil
    {
     Acquire(moveMutex);
-    setpoint -= 10;
+    setpoint -= 100;
    }
    else if (ButtonPressed (BTNRIGHT, false))                                    // börv ökar om man tryckeer på höger pil
    {
     Acquire(moveMutex);
-    setpoint += 10;
+    setpoint += 100;
    }
    ClearLine(LCD_LINE3);
    NumOut(0, LCD_LINE3, setpoint, false);
@@ -37,17 +39,26 @@ task drive()
  {
    Acquire(moveMutex);
 
-   prev_time = CurrentTick();
-   OnFwd(OUT_AC, FULL_SPEED);
-   Wait(MS_500); // update display every 0.5 seconds
+   //Hast.räknare
    long time = CurrentTick() - prev_time;
    long degrees = MotorRotationCount(MOTOR) - prev_degrees;
    float cmpm = degrees*DEG_TO_CMPM/time;
-   prev_degrees = MotorRotationCount(MOTOR);
    NumOut(0, LCD_LINE2, cmpm, false);
-   float error = setpoint - cmpm;
-   NumOut(0, LCD_LINE4, error, false);
+   float dt = CurrentTick()-prev_time;
+   prev_time = CurrentTick();
+   prev_degrees = MotorRotationCount(MOTOR);
    
+   //Reglering
+   float error = setpoint - cmpm;
+   error_area += error * dt;
+   NumOut(0, LCD_LINE4, error, false);                                          //bugtest
+   NumOut(0, LCD_LINE5, error_area, false);
+   long out = 0.01 * error /*+ (1/2) * error_area*/;
+   OnFwd(OUT_AC, out);
+   NumOut(0, LCD_LINE6, out, false);
+   Wait(MS_500);                                                                // update display every 0.1 seconds
+   prev_error = error;
+    
    Release(moveMutex);
  }
 }

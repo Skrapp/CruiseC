@@ -5,9 +5,13 @@
 // MotorRotationCount returns degrees in a long integer.
 #define MOTOR OUT_A
 //#define FULL_SPEED 60
-#define DEG_TO_CMPM 166.6667*17.5 // converts degrees per millisecond to CMPM
+#define DEG_TO_CMPM 166.6667*0.175 // converts degrees per millisecond to CMPM
 int setpoint;
+float error_area = 0;
+float prev_error = 0;
+float error;
 long prev_time;
+long out;
 long prev_degrees = 0;
 mutex moveMutex;
 
@@ -18,7 +22,7 @@ while (true)
    if (ButtonPressed (BTNLEFT, false))                                           // börv minskar om man tryckeer på vänster pil
    {
     Acquire(moveMutex);
-    setpoint -= 10;
+    setpoint -= 1;
    }
    else if (ButtonPressed (BTNRIGHT, false))                                    // börv ökar om man tryckeer på höger pil
    {
@@ -41,16 +45,34 @@ task drive()
    long time = CurrentTick() - prev_time;
    long degrees = MotorRotationCount(MOTOR) - prev_degrees;
    float cmpm = degrees*DEG_TO_CMPM/time;
-   prev_degrees = MotorRotationCount(MOTOR);
-   NumOut(0, LCD_LINE2, cmpm, false);
+   ClearLine(LCD_LINE2);
+   NumOut(0, LCD_LINE2, cmpm , false);
+   TextOut(50, LCD_LINE2, "m/min", false);
    prev_time = CurrentTick();
+   prev_degrees = MotorRotationCount(MOTOR);
    
    //Reglering
-   float error = setpoint - cmpm;
-   NumOut(0, LCD_LINE4, error, false);                                          //bugtest
-   long out = 200 * error;
-   OnFwd(OUT_AC, out);
+
+   error = setpoint - cmpm;
+   error_area += error * time;
+   ClearLine(LCD_LINE4);
+   NumOut(0, LCD_LINE4, error, false);
+   ClearLine(LCD_LINE5);                                       //bugtest
+   NumOut(0, LCD_LINE5, error_area, false);
+   out = 1.9 * error + (1/100) * error_area + 1;
+   if (out < 100)
+   {
+    OnFwdReg(OUT_AC, out, OUT_REGMODE_SYNC);
+   }
+   else
+   {
+    OnFwdReg (OUT_AC, 100, OUT_REGMODE_SYNC);
+    out = 100;
+   }
    Wait(MS_500);                                                                // update display every 0.1 seconds
+   prev_error = error;
+   ClearLine(LCD_LINE6);
+   NumOut(0, LCD_LINE6, out, false);
 
    Release(moveMutex);
  }
