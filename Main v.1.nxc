@@ -10,6 +10,7 @@ int setpoint;
 float error_area = 0;
 float prev_error = 0;
 float error;
+float d_error;
 long prev_time;
 long out;
 long prev_degrees = 0;
@@ -55,11 +56,12 @@ task drive()
 
    error = setpoint - cmpm;
    error_area += error * time;
+   d_error = prev_error - error;
    ClearLine(LCD_LINE4);
    NumOut(0, LCD_LINE4, error, false);
    ClearLine(LCD_LINE5);                                       //bugtest
    NumOut(0, LCD_LINE5, error_area, false);
-   out = 1.9 * error + (1/100) * error_area + 1;
+   out = 1.9 * error + (1/110) * error_area + 0,2 * (d_error/time) + 1;
    if (out < 100)
    {
     OnFwdReg(OUT_AC, out, OUT_REGMODE_SYNC);
