@@ -1,147 +1,151 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
 0	prev_error	10	1	0	4	2
-1	error_area	10	1	4	4	4
-2	error	10	1	8	4	6
+1	error_area	10	1	4	4	6
+2	error	10	1	8	4	7
 3	prev_time	6	1	12	4	2
 4	d_error	10	1	16	4	2
-5	__signed_stack_003drive	6	1	20	4	2
-6	__signed_stack_002drive	6	1	24	4	10
-7	__unsigned_stack_001drive	5	1	28	4	2
-8	__float_stack_003drive	10	1	32	4	6
-9	__float_stack_001drive	10	1	36	4	8
-10	out	6	1	40	4	5
+5	__float_stack_003drive	10	1	20	4	8
+6	__signed_stack_003drive	6	1	24	4	4
+7	__signed_stack_002drive	6	1	28	4	12
+8	__unsigned_stack_001drive	5	1	32	4	2
+9	__float_stack_002drive	10	1	36	4	2
+10	__float_stack_001drive	10	1	40	4	6
 11	__constValf29P1666725	10	0	44	4	1
 12	__drive_7qG2_cmpm_7qG2_001	10	1	48	4	3
-13	__constValf1P9	10	0	52	4	1
+13	__constValf6P5	10	0	52	4	1
 14	__Wait_7qG2_ms_7qG2_000_inline_drive	5	1	56	4	2
-15	__constValf0P0090909091	10	0	60	4	1
-16	moveMutex	9	0	64	4	5
+15	__constValf0P0181818182	10	0	60	4	1
+16	__drive_7qG2_degrees_7qG2_001	6	1	64	4	3
 17	prev_degrees	6	1	68	4	2
-18	__Wait_7qG2_ms_7qG2_000_inline_button	5	1	72	4	2
-19	__drive_7qG2_degrees_7qG2_001	6	1	76	4	2
-20	__drive_7qG2_time_7qG2_001	6	1	80	4	4
-21	__D0button	6	1	84	4	13
-22	__D0drive	6	1	88	4	18
-23	__TextOutMutex	9	0	92	4	22
-24	__RBtnMutex	9	0	96	4	4
-25	__DF0drive	10	1	100	4	13
-26	__signed_stack_001button	6	1	104	4	6
-27	__signed_stack_002button	6	1	108	4	2
-28	__signed_stack_001drive	6	1	112	4	20
-29	__signed_stack_003button	6	1	116	4	2
-30	setpoint	4	1	120	2	6
-31	__constVal96	2	0	122	1	2
-32	__constVal32	2	0	123	1	6
-33	__constVal1	2	0	124	1	3
-34	__ClearLine_7qG2_line_7qG2_000_inline_drive	1	1	125	1	8
-35	__constVal0	2	1	126	1	20
-36	__zfbutton	1	1	127	1	6
-37	__zfdrive	1	1	128	1	5
-38	____initialize_global_data_return	1	1	129	1	3
-39	__constVal7	2	0	130	1	2
-40	__ClearLine_7qG2_line_7qG2_000_inline_button	1	1	131	1	2
-41	__constVal63	2	0	132	1	2
-42	__PFTmp	1	1	133	1	1
-43	__RBtnArgs	8	0	5	8	8
-44	__RBtnArgs.Result	2	1	136	1	8
-45	__RBtnArgs.Index	1	1	137	1	8
-46	__RBtnArgs.Pressed	1	1	138	1	8
-47	__RBtnArgs.Count	1	1	139	1	8
-48	__RBtnArgs.Reset	1	1	140	1	8
-49	__TextOutArgs	8	0	4	16	61
-50	__TextOutArgs.Result	2	1	144	1	61
-51	__TextOutArgs.Location	8	0	2	4	61
-52	__TextOutArgs.Location.X	4	1	148	2	61
-53	__TextOutArgs.Location.Y	4	1	150	2	61
-54	__TextOutArgs.Text	7	0	152	4	61
-55	__TextOutArgs.Text.Text_type	1	0	0	1	0
-56	__TextOutArgs.Options	5	1	156	4	61
-57	__strbufdrive	7	0	160	4	2
-58	__strbufdrive.__strbufdrive_type	1	0	0	1	0
-59	__OUT_AC	7	0	162	4	2
-60	__OUT_AC.__OUT_AC_type	1	0	0	1	0
-61	__constStr0009	7	0	164	4	1
-62	__constStr0009.__constStr0009_type	1	1	0	1	0
-63	__BlankLine	7	0	166	4	5
-64	__BlankLine.__BlankLine_type	1	0	0	1	0
+18	out	6	1	72	4	5
+19	moveMutex	9	0	76	4	5
+20	__drive_7qG2_time_7qG2_001	6	1	80	4	5
+21	__Wait_7qG2_ms_7qG2_000_inline_button	5	1	84	4	2
+22	__D0button	6	1	88	4	13
+23	__D0drive	6	1	92	4	26
+24	__TextOutMutex	9	0	96	4	26
+25	__RBtnMutex	9	0	100	4	4
+26	__DF0drive	10	1	104	4	16
+27	__signed_stack_001button	6	1	108	4	6
+28	__signed_stack_003button	6	1	112	4	2
+29	__signed_stack_001drive	6	1	116	4	18
+30	__signed_stack_002button	6	1	120	4	2
+31	setpoint	4	1	124	2	6
+32	d_count	4	0	126	2	2
+33	count	4	1	128	2	4
+34	__constVal63	2	0	130	1	2
+35	__constVal96	2	0	131	1	2
+36	__constVal1	2	0	132	1	3
+37	__constVal32	2	0	133	1	6
+38	__constVal3	2	0	134	1	2
+39	__constVal0	2	1	135	1	23
+40	__zfbutton	1	1	136	1	6
+41	__zfdrive	1	1	137	1	8
+42	____initialize_global_data_return	1	1	138	1	3
+43	__PFTmp	1	1	139	1	1
+44	__ClearLine_7qG2_line_7qG2_000_inline_button	1	1	140	1	2
+45	__ClearLine_7qG2_line_7qG2_000_inline_drive	1	1	141	1	10
+46	__constVal10	2	0	142	1	1
+47	__RBtnArgs	8	0	5	8	8
+48	__RBtnArgs.Result	2	1	144	1	8
+49	__RBtnArgs.Index	1	1	145	1	8
+50	__RBtnArgs.Pressed	1	1	146	1	8
+51	__RBtnArgs.Count	1	1	147	1	8
+52	__RBtnArgs.Reset	1	1	148	1	8
+53	__TextOutArgs	8	0	4	16	72
+54	__TextOutArgs.Result	2	1	152	1	72
+55	__TextOutArgs.Location	8	0	2	4	72
+56	__TextOutArgs.Location.X	4	1	156	2	72
+57	__TextOutArgs.Location.Y	4	1	158	2	72
+58	__TextOutArgs.Text	7	0	160	4	72
+59	__TextOutArgs.Text.Text_type	1	0	0	1	0
+60	__TextOutArgs.Options	5	1	164	4	72
+61	__OUT_AC	7	0	168	4	2
+62	__OUT_AC.__OUT_AC_type	1	0	0	1	0
+63	__strbufdrive	7	0	170	4	2
+64	__strbufdrive.__strbufdrive_type	1	0	0	1	0
+65	__BlankLine	7	0	172	4	6
+66	__BlankLine.__BlankLine_type	1	0	0	1	0
+67	__constStr0009	7	0	174	4	1
+68	__constStr0009.__constStr0009_type	1	1	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	83	0	#line 83 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-0	84	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	83	2	#line 83 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-0	84	2	#line 84 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-0	84	2	#line 84 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-0	85	2		exit 0, 1
-1	21	0	#line 21 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	22	0		set __D0button, 1
-1	22	3	#line 22 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	23	3		tst 5, __zfbutton, __D0button
-1	22	6	#line 22 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	23	6		brtst 4, __NXC_Label_490, __zfbutton
-1	22	9	#line 22 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	23	9		set __signed_stack_001button, 2
-1	22	12	#line 22 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	22	12	#line 22 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	23	12		set __D0button, 0
-1	23	15	#line 23 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	24	15		acquire __RBtnMutex
-1	23	16	#line 23 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	24	16		mov __RBtnArgs.Index, __signed_stack_001button
-1	23	18	#line 23 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	24	18		mov __RBtnArgs.Reset, __D0button
-1	23	20	#line 23 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	24	20		syscall 20, __RBtnArgs
-1	23	23	#line 23 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	24	23		mov __D0button, __RBtnArgs.Pressed
-1	23	25	#line 23 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	24	25		release __RBtnMutex
-1	24	26	#line 24 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	25	26		tst 5, __zfbutton, __D0button
-1	24	29	#line 24 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	25	29		brtst 4, __NXC_Label_499, __zfbutton
-1	25	32	#line 25 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	26	32		acquire moveMutex
-1	25	33	#line 25 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	26	33	#line 26 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	26	33	#line 26 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	27	33		sub setpoint, setpoint, __constVal1
-1	26	37	#line 26 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	27	37	#line 27 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	28	37		jmp __NXC_Label_502
-1	27	39	#line 27 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	28	39		set __signed_stack_001button, 1
-1	27	42	#line 27 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	27	42	#line 27 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	28	42		set __D0button, 0
-1	28	45	#line 28 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	29	45		acquire __RBtnMutex
-1	28	46	#line 28 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	29	46		mov __RBtnArgs.Index, __signed_stack_001button
-1	28	48	#line 28 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	29	48		mov __RBtnArgs.Reset, __D0button
-1	28	50	#line 28 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	29	50		syscall 20, __RBtnArgs
-1	28	53	#line 28 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	29	53		mov __D0button, __RBtnArgs.Pressed
-1	28	55	#line 28 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	29	55		release __RBtnMutex
-1	29	56	#line 29 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	30	56		tst 5, __zfbutton, __D0button
-1	29	59	#line 29 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	30	59		brtst 4, __NXC_Label_509, __zfbutton
-1	30	62	#line 30 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	31	62		acquire moveMutex
-1	30	63	#line 30 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	31	63	#line 31 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	31	63	#line 31 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	32	63		add setpoint, setpoint, __constVal1
-1	31	67	#line 31 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	32	67	#line 32 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	32	67	#line 32 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	32	67	#line 32 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	33	67		set __ClearLine_7qG2_line_7qG2_000_inline_button, 40
-1	32	70	#line 32 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+0	100	0	#line 100 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+0	101	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	100	2	#line 100 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+0	101	2	#line 101 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+0	101	2	#line 101 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+0	102	2		exit 0, 1
+1	23	0	#line 23 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	24	0		set __D0button, 1
+1	24	3	#line 24 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	25	3		tst 5, __zfbutton, __D0button
+1	24	6	#line 24 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	25	6		brtst 4, __NXC_Label_490, __zfbutton
+1	24	9	#line 24 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	25	9		set __signed_stack_001button, 2
+1	24	12	#line 24 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	24	12	#line 24 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	25	12		set __D0button, 0
+1	25	15	#line 25 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	26	15		acquire __RBtnMutex
+1	25	16	#line 25 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	26	16		mov __RBtnArgs.Index, __signed_stack_001button
+1	25	18	#line 25 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	26	18		mov __RBtnArgs.Reset, __D0button
+1	25	20	#line 25 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	26	20		syscall 20, __RBtnArgs
+1	25	23	#line 25 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	26	23		mov __D0button, __RBtnArgs.Pressed
+1	25	25	#line 25 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	26	25		release __RBtnMutex
+1	26	26	#line 26 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	27	26		tst 5, __zfbutton, __D0button
+1	26	29	#line 26 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	27	29		brtst 4, __NXC_Label_499, __zfbutton
+1	27	32	#line 27 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	28	32		acquire moveMutex
+1	27	33	#line 27 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	28	33	#line 28 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	28	33	#line 28 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	29	33		sub setpoint, setpoint, __constVal1
+1	28	37	#line 28 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	29	37	#line 29 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	30	37		jmp __NXC_Label_502
+1	29	39	#line 29 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	30	39		set __signed_stack_001button, 1
+1	29	42	#line 29 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	29	42	#line 29 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	30	42		set __D0button, 0
+1	30	45	#line 30 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	31	45		acquire __RBtnMutex
+1	30	46	#line 30 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	31	46		mov __RBtnArgs.Index, __signed_stack_001button
+1	30	48	#line 30 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	31	48		mov __RBtnArgs.Reset, __D0button
+1	30	50	#line 30 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	31	50		syscall 20, __RBtnArgs
+1	30	53	#line 30 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	31	53		mov __D0button, __RBtnArgs.Pressed
+1	30	55	#line 30 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	31	55		release __RBtnMutex
+1	31	56	#line 31 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	32	56		tst 5, __zfbutton, __D0button
+1	31	59	#line 31 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	32	59		brtst 4, __NXC_Label_509, __zfbutton
+1	32	62	#line 32 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	33	62		acquire moveMutex
+1	32	63	#line 32 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	33	63	#line 33 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	33	63	#line 33 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	34	63		add setpoint, setpoint, __constVal1
+1	33	67	#line 33 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	34	67	#line 34 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	34	67	#line 34 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	34	67	#line 34 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	35	67		set __ClearLine_7qG2_line_7qG2_000_inline_button, 40
+1	34	70	#line 34 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
 1	6076	70	#line 6076 "NXCDefs.h"
 1	6077	70	#pragma macro 7
 1	6077	70		acquire __TextOutMutex
@@ -151,409 +155,472 @@ Clump	Line	PC	Source
 1	6077	77		mov __TextOutArgs.Text, __BlankLine
 1	6077	79		syscall 13, __TextOutArgs
 1	6077	82		release __TextOutMutex
-1	3867	83	#line 3867 "NXCDefs.h"
+1	4193	83	#line 4193 "NXCDefs.h"
 1	6076	83	#line 6076 "NXCDefs.h"
-1	33	83	#line 33 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	33	83	#line 33 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	34	83		set __signed_stack_001button, 0
-1	33	86	#line 33 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	33	86	#line 33 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	34	86		set __signed_stack_002button, 40
-1	33	89	#line 33 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	33	89	#line 33 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	34	89		mov __signed_stack_003button, setpoint
-1	33	91	#line 33 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	33	91	#line 33 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	34	91		set __D0button, 0
-1	34	94	#line 34 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	35	94		acquire __TextOutMutex
-1	34	95	#line 34 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	35	95		mov __TextOutArgs.Location.X, __signed_stack_001button
-1	34	97	#line 34 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	35	97		mov __TextOutArgs.Location.Y, __signed_stack_002button
-1	34	99	#line 34 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	35	99		mov __TextOutArgs.Options, __D0button
-1	34	101	#line 34 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	35	101		numtostr __TextOutArgs.Text, __signed_stack_003button
-1	34	104	#line 34 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	35	104		syscall 13, __TextOutArgs
-1	34	107	#line 34 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	35	107		mov __D0button, __TextOutArgs.Result
-1	34	109	#line 34 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	35	109		release __TextOutMutex
-1	34	110	#line 34 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	34	110	#line 34 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	35	110		set __Wait_7qG2_ms_7qG2_000_inline_button, 100
-1	34	113	#line 34 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	35	83	#line 35 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	35	83	#line 35 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	36	83		set __signed_stack_001button, 0
+1	35	86	#line 35 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	35	86	#line 35 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	36	86		set __signed_stack_002button, 40
+1	35	89	#line 35 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	35	89	#line 35 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	36	89		mov __signed_stack_003button, setpoint
+1	35	91	#line 35 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	35	91	#line 35 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	36	91		set __D0button, 0
+1	36	94	#line 36 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	37	94		acquire __TextOutMutex
+1	36	95	#line 36 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	37	95		mov __TextOutArgs.Location.X, __signed_stack_001button
+1	36	97	#line 36 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	37	97		mov __TextOutArgs.Location.Y, __signed_stack_002button
+1	36	99	#line 36 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	37	99		mov __TextOutArgs.Options, __D0button
+1	36	101	#line 36 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	37	101		numtostr __TextOutArgs.Text, __signed_stack_003button
+1	36	104	#line 36 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	37	104		syscall 13, __TextOutArgs
+1	36	107	#line 36 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	37	107		mov __D0button, __TextOutArgs.Result
+1	36	109	#line 36 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	37	109		release __TextOutMutex
+1	36	110	#line 36 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	36	110	#line 36 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	37	110		set __Wait_7qG2_ms_7qG2_000_inline_button, 200
+1	36	113	#line 36 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
 1	7921	113	#line 7921 "NXCDefs.h"
 1	7922	113		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_button
 1	7921	116	#line 7921 "NXCDefs.h"
-1	35	116	#line 35 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	36	116	#line 36 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	37	116		release moveMutex
-1	36	117	#line 36 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	37	116	#line 37 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	38	116	#line 38 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	39	116		release moveMutex
 1	38	117	#line 38 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	39	117		jmp __NXC_Label_489
-1	38	119	#line 38 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-1	39	119		exit -1, -1
-2	41	0	#line 41 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	42	0		set __D0drive, 1
-2	42	3	#line 42 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	43	3		tst 5, __zfdrive, __D0drive
-2	42	6	#line 42 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	43	6		brtst 4, __NXC_Label_525, __zfdrive
-2	45	9	#line 45 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	46	9		acquire moveMutex
-2	45	10	#line 45 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	45	10	#line 45 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	46	10		gettick __unsigned_stack_001drive
-2	45	12	#line 45 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	46	12	#line 46 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	46	12	#line 46 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	47	12		sub __drive_7qG2_time_7qG2_001, __unsigned_stack_001drive, prev_time
-2	46	16	#line 46 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	46	16	#line 46 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	47	16		getout __signed_stack_001drive, __constVal0, 14
-2	46	20	#line 46 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	47	20	#line 47 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	47	20	#line 47 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	48	20		sub __drive_7qG2_degrees_7qG2_001, __signed_stack_001drive, prev_degrees
-2	47	24	#line 47 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	47	24	#line 47 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	47	24	#line 47 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	47	24	#line 47 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	47	24	#line 47 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	48	24		mul __float_stack_001drive, __drive_7qG2_degrees_7qG2_001, __constValf29P1666725
-2	47	28	#line 47 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	48	28	#line 48 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	48	28	#line 48 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	49	28		div __drive_7qG2_cmpm_7qG2_001, __float_stack_001drive, __drive_7qG2_time_7qG2_001
-2	48	32	#line 48 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	48	32	#line 48 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	49	32		set __ClearLine_7qG2_line_7qG2_000_inline_drive, 48
-2	48	35	#line 48 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	6076	35	#line 6076 "NXCDefs.h"
-2	6077	35	#pragma macro 7
-2	6077	35		acquire __TextOutMutex
-2	6077	36		mov __TextOutArgs.Location.X, __constVal0
-2	6077	38		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_drive
-2	6077	40		mov __TextOutArgs.Options, __constVal0
-2	6077	42		mov __TextOutArgs.Text, __BlankLine
-2	6077	44		syscall 13, __TextOutArgs
-2	6077	47		release __TextOutMutex
-2	4010	48	#line 4010 "NXCDefs.h"
-2	6076	48	#line 6076 "NXCDefs.h"
-2	49	48	#line 49 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	49	48	#line 49 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	50	48		set __signed_stack_001drive, 0
-2	49	51	#line 49 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	49	51	#line 49 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	50	51		set __signed_stack_002drive, 48
-2	49	54	#line 49 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	49	54	#line 49 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	50	54		mov __float_stack_003drive, __drive_7qG2_cmpm_7qG2_001
-2	49	56	#line 49 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	49	56	#line 49 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	50	56		mov __DF0drive, __constVal0
-2	50	58	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	51	58		acquire __TextOutMutex
-2	50	59	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	51	59		mov __TextOutArgs.Location.X, __signed_stack_001drive
-2	50	61	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	51	61		mov __TextOutArgs.Location.Y, __signed_stack_002drive
-2	50	63	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	51	63		mov __TextOutArgs.Options, __DF0drive
-2	50	65	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	51	65		numtostr __TextOutArgs.Text, __float_stack_003drive
-2	50	68	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	51	68		syscall 13, __TextOutArgs
-2	50	71	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	51	71		mov __D0drive, __TextOutArgs.Result
-2	50	73	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	51	73		release __TextOutMutex
-2	50	74	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	50	74	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	51	74		set __signed_stack_001drive, 50
-2	50	77	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	50	77	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	51	77		set __signed_stack_002drive, 48
-2	50	80	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	50	80	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	51	80		strcat __strbufdrive, __constStr0009
-2	50	84	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	51	84		set __D0drive, 0
-2	51	87	#line 51 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	52	87		acquire __TextOutMutex
-2	51	88	#line 51 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	52	88		mov __TextOutArgs.Location.X, __signed_stack_001drive
-2	51	90	#line 51 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	52	90		mov __TextOutArgs.Location.Y, __signed_stack_002drive
-2	51	92	#line 51 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	52	92		mov __TextOutArgs.Options, __D0drive
-2	51	94	#line 51 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	52	94		mov __TextOutArgs.Text, __strbufdrive
-2	51	96	#line 51 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	52	96		syscall 13, __TextOutArgs
-2	51	99	#line 51 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	52	99		mov __D0drive, __TextOutArgs.Result
-2	51	101	#line 51 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	52	101		release __TextOutMutex
-2	51	102	#line 51 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	51	102	#line 51 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	52	102		gettick prev_time
-2	51	104	#line 51 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	51	104	#line 51 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	51	104	#line 51 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	56	104	#line 56 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	57	104		getout prev_degrees, __constVal0, 14
-2	56	108	#line 56 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	56	108	#line 56 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	56	108	#line 56 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	56	108	#line 56 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	57	108	#line 57 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	57	108	#line 57 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	58	108		sub error, setpoint, __drive_7qG2_cmpm_7qG2_001
-2	57	112	#line 57 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	57	112	#line 57 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	57	112	#line 57 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	57	112	#line 57 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	58	112	#line 58 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	58	112	#line 58 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	59	112		mul __DF0drive, error, __drive_7qG2_time_7qG2_001
-2	58	116	#line 58 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	59	116		add error_area, error_area, __DF0drive
-2	58	120	#line 58 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	58	120	#line 58 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	58	120	#line 58 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	59	120	#line 59 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	59	120	#line 59 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	60	120		sub d_error, prev_error, error
-2	59	124	#line 59 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	59	124	#line 59 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	59	124	#line 59 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	60	124		set __ClearLine_7qG2_line_7qG2_000_inline_drive, 32
-2	59	127	#line 59 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	6076	127	#line 6076 "NXCDefs.h"
-2	6077	127	#pragma macro 7
-2	6077	127		acquire __TextOutMutex
-2	6077	128		mov __TextOutArgs.Location.X, __constVal0
-2	6077	130		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_drive
-2	6077	132		mov __TextOutArgs.Options, __constVal0
-2	6077	134		mov __TextOutArgs.Text, __BlankLine
-2	6077	136		syscall 13, __TextOutArgs
-2	6077	139		release __TextOutMutex
-2	4148	140	#line 4148 "NXCDefs.h"
-2	6076	140	#line 6076 "NXCDefs.h"
-2	60	140	#line 60 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	60	140	#line 60 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	61	140		set __signed_stack_001drive, 0
-2	60	143	#line 60 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	60	143	#line 60 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	61	143		set __signed_stack_002drive, 32
-2	60	146	#line 60 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	60	146	#line 60 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	61	146		mov __float_stack_003drive, error
-2	60	148	#line 60 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	60	148	#line 60 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	61	148		mov __DF0drive, __constVal0
-2	61	150	#line 61 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	62	150		acquire __TextOutMutex
-2	61	151	#line 61 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	62	151		mov __TextOutArgs.Location.X, __signed_stack_001drive
-2	61	153	#line 61 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	62	153		mov __TextOutArgs.Location.Y, __signed_stack_002drive
-2	61	155	#line 61 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	62	155		mov __TextOutArgs.Options, __DF0drive
-2	61	157	#line 61 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	62	157		numtostr __TextOutArgs.Text, __float_stack_003drive
-2	61	160	#line 61 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	62	160		syscall 13, __TextOutArgs
-2	61	163	#line 61 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	62	163		mov __D0drive, __TextOutArgs.Result
-2	61	165	#line 61 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	62	165		release __TextOutMutex
-2	61	166	#line 61 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	61	166	#line 61 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	62	166		set __ClearLine_7qG2_line_7qG2_000_inline_drive, 24
-2	61	169	#line 61 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	6076	169	#line 6076 "NXCDefs.h"
-2	6077	169	#pragma macro 7
-2	6077	169		acquire __TextOutMutex
-2	6077	170		mov __TextOutArgs.Location.X, __constVal0
-2	6077	172		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_drive
-2	6077	174		mov __TextOutArgs.Options, __constVal0
-2	6077	176		mov __TextOutArgs.Text, __BlankLine
-2	6077	178		syscall 13, __TextOutArgs
-2	6077	181		release __TextOutMutex
-2	4197	182	#line 4197 "NXCDefs.h"
-2	6076	182	#line 6076 "NXCDefs.h"
-2	62	182	#line 62 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	62	182	#line 62 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	182		set __signed_stack_001drive, 0
-2	62	185	#line 62 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	62	185	#line 62 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	185		set __signed_stack_002drive, 24
-2	62	188	#line 62 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	62	188	#line 62 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	188		mov __float_stack_003drive, error_area
-2	62	190	#line 62 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	62	190	#line 62 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	190		mov __DF0drive, __constVal0
-2	63	192	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	64	192		acquire __TextOutMutex
-2	63	193	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	64	193		mov __TextOutArgs.Location.X, __signed_stack_001drive
-2	63	195	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	64	195		mov __TextOutArgs.Location.Y, __signed_stack_002drive
-2	63	197	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	64	197		mov __TextOutArgs.Options, __DF0drive
-2	63	199	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	64	199		numtostr __TextOutArgs.Text, __float_stack_003drive
-2	63	202	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	64	202		syscall 13, __TextOutArgs
-2	63	205	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	64	205		mov __D0drive, __TextOutArgs.Result
-2	63	207	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	64	207		release __TextOutMutex
-2	63	208	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	208	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	208	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	208	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	208	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	64	208		mul __float_stack_001drive, __constValf1P9, error
-2	63	212	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	212	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	212	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	212	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	212	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	64	212		mul __DF0drive, __constValf0P0090909091, error_area
-2	63	216	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	64	216		add __float_stack_001drive, __float_stack_001drive, __DF0drive
-2	63	220	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	220	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	220	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	64	220		add out, __float_stack_001drive, __constVal0
-2	63	224	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	224	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	224	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	64	224		set __signed_stack_001drive, 2
-2	63	227	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	227	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	227	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	227	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	63	227	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	64	227		div __DF0drive, d_error, __drive_7qG2_time_7qG2_001
-2	63	231	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	64	231		mul __float_stack_001drive, __signed_stack_001drive, __DF0drive
-2	63	235	#line 63 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	64	235	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	64	235	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	65	235		add __DF0drive, __float_stack_001drive, __constVal1
-2	64	239	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	64	239	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	65	239		mov __signed_stack_001drive, out
-2	64	241	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	65	241	#line 65 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	66	241		set __D0drive, 100
-2	65	244	#line 65 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	66	244		cmp 0, __zfdrive, __signed_stack_001drive, __D0drive
-2	65	248	#line 65 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	66	248		mov __D0drive, __zfdrive
-2	66	250	#line 66 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	67	250		brtst 4, __NXC_Label_590, __zfdrive
-2	66	253	#line 66 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	67	253		mov __signed_stack_001drive, out
-2	66	255	#line 66 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	66	255	#line 66 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	67	255		set __D0drive, 2
-2	67	258	#line 67 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	68	258	#pragma macro 7
-2	68	258		setout __OUT_AC, 2, __signed_stack_001drive, 1, __constVal7, 8, __D0drive, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-2	4322	281	#line 4322 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	67	281	#line 67 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	70	281	#line 70 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	71	281		jmp __NXC_Label_595
-2	70	283	#line 70 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	71	283		set __signed_stack_001drive, 100
-2	70	286	#line 70 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	70	286	#line 70 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	71	286		set __D0drive, 2
-2	71	289	#line 71 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	72	289	#pragma macro 7
-2	72	289		setout __OUT_AC, 2, __signed_stack_001drive, 1, __constVal7, 8, __D0drive, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-2	4338	312	#line 4338 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	71	312	#line 71 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	72	312	#line 72 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	73	312		set out, 100
-2	72	315	#line 72 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	72	315	#line 72 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	73	315	#line 73 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	73	315	#line 73 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	74	315		set __Wait_7qG2_ms_7qG2_000_inline_drive, 500
-2	73	318	#line 73 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	7921	318	#line 7921 "NXCDefs.h"
-2	7922	318		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_drive
-2	7921	321	#line 7921 "NXCDefs.h"
-2	74	321	#line 74 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	75	321	#line 75 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	76	321		mov prev_error, error
-2	75	323	#line 75 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	75	323	#line 75 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	75	323	#line 75 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	76	323		set __ClearLine_7qG2_line_7qG2_000_inline_drive, 16
-2	75	326	#line 75 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	6076	326	#line 6076 "NXCDefs.h"
-2	6077	326	#pragma macro 7
-2	6077	326		acquire __TextOutMutex
-2	6077	327		mov __TextOutArgs.Location.X, __constVal0
-2	6077	329		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_drive
-2	6077	331		mov __TextOutArgs.Options, __constVal0
-2	6077	333		mov __TextOutArgs.Text, __BlankLine
-2	6077	335		syscall 13, __TextOutArgs
-2	6077	338		release __TextOutMutex
-2	4377	339	#line 4377 "NXCDefs.h"
+1	40	117	#line 40 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	41	117		jmp __NXC_Label_489
+1	40	119	#line 40 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+1	41	119		exit -1, -1
+2	43	0	#line 43 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	44	0		set __D0drive, 1
+2	44	3	#line 44 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	45	3		tst 5, __zfdrive, __D0drive
+2	44	6	#line 44 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	45	6		brtst 4, __NXC_Label_525, __zfdrive
+2	47	9	#line 47 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	48	9		acquire moveMutex
+2	47	10	#line 47 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	47	10	#line 47 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	48	10		gettick __unsigned_stack_001drive
+2	47	12	#line 47 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	48	12	#line 48 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	48	12	#line 48 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	49	12		sub __drive_7qG2_time_7qG2_001, __unsigned_stack_001drive, prev_time
+2	48	16	#line 48 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	48	16	#line 48 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	49	16		getout __signed_stack_001drive, __constVal0, 14
+2	48	20	#line 48 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	49	20	#line 49 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	49	20	#line 49 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	50	20		sub __drive_7qG2_degrees_7qG2_001, __signed_stack_001drive, prev_degrees
+2	49	24	#line 49 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	49	24	#line 49 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	49	24	#line 49 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	49	24	#line 49 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	49	24	#line 49 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	50	24		mul __float_stack_001drive, __drive_7qG2_degrees_7qG2_001, __constValf29P1666725
+2	49	28	#line 49 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	50	28	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	50	28	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	51	28		div __drive_7qG2_cmpm_7qG2_001, __float_stack_001drive, __drive_7qG2_time_7qG2_001
+2	50	32	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	50	32	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	51	32		gettick prev_time
+2	50	34	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	50	34	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	50	34	#line 50 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	54	34	#line 54 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	55	34		getout prev_degrees, __constVal0, 14
+2	54	38	#line 54 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	54	38	#line 54 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	54	38	#line 54 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	54	38	#line 54 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	55	38	#line 55 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	55	38	#line 55 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	56	38		sub error, setpoint, __drive_7qG2_cmpm_7qG2_001
+2	55	42	#line 55 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	55	42	#line 55 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	55	42	#line 55 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	55	42	#line 55 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	57	42	#line 57 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	57	42	#line 57 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	58	42		mul __DF0drive, error, __drive_7qG2_time_7qG2_001
+2	57	46	#line 57 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	58	46		add error_area, error_area, __DF0drive
+2	57	50	#line 57 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	57	50	#line 57 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	58	50		mov __signed_stack_001drive, count
+2	57	52	#line 57 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	58	52	#line 58 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	59	52		mov __D0drive, d_count
+2	58	54	#line 58 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	59	54		cmp 2, __zfdrive, __signed_stack_001drive, __D0drive
+2	58	58	#line 58 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	59	58		mov __D0drive, __zfdrive
+2	59	60	#line 59 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	60	60		brtst 4, __NXC_Label_544, __zfdrive
+2	59	63	#line 59 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	59	63	#line 59 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	60	63	#line 60 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	60	63	#line 60 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	61	63		sub d_error, prev_error, error
+2	60	67	#line 60 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	60	67	#line 60 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	61	67	#line 61 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	62	67		mov prev_error, error
+2	61	69	#line 61 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	61	69	#line 61 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	62	69	#line 62 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	63	69		set count, 0
+2	62	72	#line 62 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	62	72	#line 62 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	64	72	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	64	72	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	64	72	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	64	72	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	64	72	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	65	72		mul __float_stack_001drive, __constValf6P5, error
+2	64	76	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	64	76	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	64	76	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	64	76	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	64	76	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	65	76		mul __DF0drive, __constValf0P0181818182, error_area
+2	64	80	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	65	80		add __float_stack_001drive, __float_stack_001drive, __DF0drive
+2	64	84	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	64	84	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	65	84		mov __float_stack_002drive, __constVal10
+2	64	86	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	64	86	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	65	86		mov __float_stack_003drive, d_error
+2	64	88	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	64	88	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	64	88	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	64	88	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	64	88	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	65	88		mul __D0drive, d_count, __drive_7qG2_time_7qG2_001
+2	64	92	#line 64 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	65	92		div __DF0drive, __float_stack_003drive, __D0drive
+2	67	96	#line 67 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	68	96		mul __DF0drive, __float_stack_002drive, __DF0drive
+2	67	100	#line 67 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	68	100		add out, __float_stack_001drive, __DF0drive
+2	67	104	#line 67 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	67	104	#line 67 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	67	104	#line 67 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	68	104		mov __signed_stack_001drive, out
+2	67	106	#line 67 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	68	106	#line 68 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	69	106		set __D0drive, 100
+2	68	109	#line 68 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	69	109		cmp 0, __zfdrive, __signed_stack_001drive, __D0drive
+2	68	113	#line 68 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	69	113		mov __D0drive, __zfdrive
+2	69	115	#line 69 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	70	115		brtst 4, __NXC_Label_561, __zfdrive
+2	69	118	#line 69 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	70	118		mov __D0drive, out
+2	70	120	#line 70 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	71	120	#pragma macro 7
+2	71	120		setout __OUT_AC, 2, __D0drive, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+2	4483	143	#line 4483 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	70	143	#line 70 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	73	143	#line 73 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	74	143		jmp __NXC_Label_564
+2	73	145	#line 73 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	74	145		set __D0drive, 100
+2	74	148	#line 74 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	75	148	#pragma macro 7
+2	75	148		setout __OUT_AC, 2, __D0drive, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+2	4493	171	#line 4493 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	74	171	#line 74 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	74	171	#line 74 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	74	171	#line 74 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	75	171	#line 75 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	75	171	#line 75 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	76	171		mul __DF0drive, error, __drive_7qG2_time_7qG2_001
+2	75	175	#line 75 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	76	175		sub error_area, error_area, __DF0drive
+2	75	179	#line 75 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	76	179	#line 76 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	77	179		set out, 100
+2	76	182	#line 76 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	76	182	#line 76 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	78	182	#line 78 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	78	182	#line 78 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	79	182		set __ClearLine_7qG2_line_7qG2_000_inline_drive, 48
+2	78	185	#line 78 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	6076	185	#line 6076 "NXCDefs.h"
+2	6077	185	#pragma macro 7
+2	6077	185		acquire __TextOutMutex
+2	6077	186		mov __TextOutArgs.Location.X, __constVal0
+2	6077	188		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_drive
+2	6077	190		mov __TextOutArgs.Options, __constVal0
+2	6077	192		mov __TextOutArgs.Text, __BlankLine
+2	6077	194		syscall 13, __TextOutArgs
+2	6077	197		release __TextOutMutex
+2	4528	198	#line 4528 "NXCDefs.h"
+2	6076	198	#line 6076 "NXCDefs.h"
+2	79	198	#line 79 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	79	198	#line 79 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	80	198		set __signed_stack_001drive, 0
+2	79	201	#line 79 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	79	201	#line 79 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	80	201		set __signed_stack_002drive, 48
+2	79	204	#line 79 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	79	204	#line 79 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	80	204		mov __float_stack_003drive, __drive_7qG2_cmpm_7qG2_001
+2	79	206	#line 79 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	79	206	#line 79 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	80	206		mov __DF0drive, __constVal0
+2	80	208	#line 80 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	81	208		acquire __TextOutMutex
+2	80	209	#line 80 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	81	209		mov __TextOutArgs.Location.X, __signed_stack_001drive
+2	80	211	#line 80 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	81	211		mov __TextOutArgs.Location.Y, __signed_stack_002drive
+2	80	213	#line 80 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	81	213		mov __TextOutArgs.Options, __DF0drive
+2	80	215	#line 80 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	81	215		numtostr __TextOutArgs.Text, __float_stack_003drive
+2	80	218	#line 80 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	81	218		syscall 13, __TextOutArgs
+2	80	221	#line 80 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	81	221		mov __D0drive, __TextOutArgs.Result
+2	80	223	#line 80 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	81	223		release __TextOutMutex
+2	80	224	#line 80 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	80	224	#line 80 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	81	224		set __signed_stack_001drive, 50
+2	80	227	#line 80 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	80	227	#line 80 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	81	227		set __signed_stack_002drive, 48
+2	80	230	#line 80 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	80	230	#line 80 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	81	230		strcat __strbufdrive, __constStr0009
+2	80	234	#line 80 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	81	234		set __D0drive, 0
+2	81	237	#line 81 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	82	237		acquire __TextOutMutex
+2	81	238	#line 81 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	82	238		mov __TextOutArgs.Location.X, __signed_stack_001drive
+2	81	240	#line 81 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	82	240		mov __TextOutArgs.Location.Y, __signed_stack_002drive
+2	81	242	#line 81 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	82	242		mov __TextOutArgs.Options, __D0drive
+2	81	244	#line 81 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	82	244		mov __TextOutArgs.Text, __strbufdrive
+2	81	246	#line 81 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	82	246		syscall 13, __TextOutArgs
+2	81	249	#line 81 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	82	249		mov __D0drive, __TextOutArgs.Result
+2	81	251	#line 81 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	82	251		release __TextOutMutex
+2	81	252	#line 81 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	81	252	#line 81 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	82	252		set __ClearLine_7qG2_line_7qG2_000_inline_drive, 32
+2	81	255	#line 81 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	6076	255	#line 6076 "NXCDefs.h"
+2	6077	255	#pragma macro 7
+2	6077	255		acquire __TextOutMutex
+2	6077	256		mov __TextOutArgs.Location.X, __constVal0
+2	6077	258		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_drive
+2	6077	260		mov __TextOutArgs.Options, __constVal0
+2	6077	262		mov __TextOutArgs.Text, __BlankLine
+2	6077	264		syscall 13, __TextOutArgs
+2	6077	267		release __TextOutMutex
+2	4612	268	#line 4612 "NXCDefs.h"
+2	6076	268	#line 6076 "NXCDefs.h"
+2	82	268	#line 82 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	82	268	#line 82 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	83	268		set __signed_stack_001drive, 0
+2	82	271	#line 82 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	82	271	#line 82 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	83	271		set __signed_stack_002drive, 32
+2	82	274	#line 82 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	82	274	#line 82 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	83	274		mov __float_stack_003drive, error
+2	82	276	#line 82 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	82	276	#line 82 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	83	276		mov __DF0drive, __constVal0
+2	83	278	#line 83 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	84	278		acquire __TextOutMutex
+2	83	279	#line 83 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	84	279		mov __TextOutArgs.Location.X, __signed_stack_001drive
+2	83	281	#line 83 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	84	281		mov __TextOutArgs.Location.Y, __signed_stack_002drive
+2	83	283	#line 83 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	84	283		mov __TextOutArgs.Options, __DF0drive
+2	83	285	#line 83 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	84	285		numtostr __TextOutArgs.Text, __float_stack_003drive
+2	83	288	#line 83 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	84	288		syscall 13, __TextOutArgs
+2	83	291	#line 83 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	84	291		mov __D0drive, __TextOutArgs.Result
+2	83	293	#line 83 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	84	293		release __TextOutMutex
+2	83	294	#line 83 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	83	294	#line 83 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	84	294		set __ClearLine_7qG2_line_7qG2_000_inline_drive, 24
+2	83	297	#line 83 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	6076	297	#line 6076 "NXCDefs.h"
+2	6077	297	#pragma macro 7
+2	6077	297		acquire __TextOutMutex
+2	6077	298		mov __TextOutArgs.Location.X, __constVal0
+2	6077	300		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_drive
+2	6077	302		mov __TextOutArgs.Options, __constVal0
+2	6077	304		mov __TextOutArgs.Text, __BlankLine
+2	6077	306		syscall 13, __TextOutArgs
+2	6077	309		release __TextOutMutex
+2	4661	310	#line 4661 "NXCDefs.h"
+2	6076	310	#line 6076 "NXCDefs.h"
+2	84	310	#line 84 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	84	310	#line 84 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	85	310		set __signed_stack_001drive, 0
+2	84	313	#line 84 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	84	313	#line 84 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	85	313		set __signed_stack_002drive, 24
+2	84	316	#line 84 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	84	316	#line 84 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	85	316		mov __float_stack_003drive, error_area
+2	84	318	#line 84 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	84	318	#line 84 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	85	318		mov __DF0drive, __constVal0
+2	85	320	#line 85 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	86	320		acquire __TextOutMutex
+2	85	321	#line 85 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	86	321		mov __TextOutArgs.Location.X, __signed_stack_001drive
+2	85	323	#line 85 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	86	323		mov __TextOutArgs.Location.Y, __signed_stack_002drive
+2	85	325	#line 85 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	86	325		mov __TextOutArgs.Options, __DF0drive
+2	85	327	#line 85 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	86	327		numtostr __TextOutArgs.Text, __float_stack_003drive
+2	85	330	#line 85 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	86	330		syscall 13, __TextOutArgs
+2	85	333	#line 85 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	86	333		mov __D0drive, __TextOutArgs.Result
+2	85	335	#line 85 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	86	335		release __TextOutMutex
+2	85	336	#line 85 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	85	336	#line 85 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	86	336		set __ClearLine_7qG2_line_7qG2_000_inline_drive, 16
+2	85	339	#line 85 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
 2	6076	339	#line 6076 "NXCDefs.h"
-2	76	339	#line 76 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	76	339	#line 76 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	77	339		set __signed_stack_001drive, 0
-2	76	342	#line 76 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	76	342	#line 76 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	77	342		set __signed_stack_002drive, 16
-2	76	345	#line 76 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	76	345	#line 76 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	77	345		mov __signed_stack_003drive, out
-2	76	347	#line 76 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	76	347	#line 76 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	77	347		set __D0drive, 0
-2	78	350	#line 78 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	79	350		acquire __TextOutMutex
-2	78	351	#line 78 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	79	351		mov __TextOutArgs.Location.X, __signed_stack_001drive
-2	78	353	#line 78 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	79	353		mov __TextOutArgs.Location.Y, __signed_stack_002drive
-2	78	355	#line 78 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	79	355		mov __TextOutArgs.Options, __D0drive
-2	78	357	#line 78 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	79	357		numtostr __TextOutArgs.Text, __signed_stack_003drive
-2	78	360	#line 78 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	79	360		syscall 13, __TextOutArgs
-2	78	363	#line 78 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	79	363		mov __D0drive, __TextOutArgs.Result
-2	78	365	#line 78 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	79	365		release __TextOutMutex
-2	78	366	#line 78 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	79	366	#line 79 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	80	366		release moveMutex
-2	79	367	#line 79 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	81	367	#line 81 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	82	367		jmp __NXC_Label_524
-2	81	369	#line 81 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-2	82	369		exit -1, -1
-3	87	0	#line 87 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
-3	88	0		subret ____initialize_global_data_return
+2	6077	339	#pragma macro 7
+2	6077	339		acquire __TextOutMutex
+2	6077	340		mov __TextOutArgs.Location.X, __constVal0
+2	6077	342		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_drive
+2	6077	344		mov __TextOutArgs.Options, __constVal0
+2	6077	346		mov __TextOutArgs.Text, __BlankLine
+2	6077	348		syscall 13, __TextOutArgs
+2	6077	351		release __TextOutMutex
+2	4710	352	#line 4710 "NXCDefs.h"
+2	6076	352	#line 6076 "NXCDefs.h"
+2	86	352	#line 86 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	86	352	#line 86 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	87	352		set __signed_stack_001drive, 0
+2	86	355	#line 86 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	86	355	#line 86 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	87	355		set __signed_stack_002drive, 16
+2	86	358	#line 86 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	86	358	#line 86 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	87	358		mov __signed_stack_003drive, out
+2	86	360	#line 86 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	86	360	#line 86 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	87	360		set __D0drive, 0
+2	87	363	#line 87 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	88	363		acquire __TextOutMutex
+2	87	364	#line 87 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	88	364		mov __TextOutArgs.Location.X, __signed_stack_001drive
+2	87	366	#line 87 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	88	366		mov __TextOutArgs.Location.Y, __signed_stack_002drive
+2	87	368	#line 87 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	88	368		mov __TextOutArgs.Options, __D0drive
+2	87	370	#line 87 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	88	370		numtostr __TextOutArgs.Text, __signed_stack_003drive
+2	87	373	#line 87 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	88	373		syscall 13, __TextOutArgs
+2	87	376	#line 87 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	88	376		mov __D0drive, __TextOutArgs.Result
+2	87	378	#line 87 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	88	378		release __TextOutMutex
+2	87	379	#line 87 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	87	379	#line 87 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	88	379		set __ClearLine_7qG2_line_7qG2_000_inline_drive, 8
+2	87	382	#line 87 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	6076	382	#line 6076 "NXCDefs.h"
+2	6077	382	#pragma macro 7
+2	6077	382		acquire __TextOutMutex
+2	6077	383		mov __TextOutArgs.Location.X, __constVal0
+2	6077	385		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_drive
+2	6077	387		mov __TextOutArgs.Options, __constVal0
+2	6077	389		mov __TextOutArgs.Text, __BlankLine
+2	6077	391		syscall 13, __TextOutArgs
+2	6077	394		release __TextOutMutex
+2	4759	395	#line 4759 "NXCDefs.h"
+2	6076	395	#line 6076 "NXCDefs.h"
+2	88	395	#line 88 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	88	395	#line 88 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	89	395		set __signed_stack_001drive, 0
+2	88	398	#line 88 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	88	398	#line 88 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	89	398		set __signed_stack_002drive, 8
+2	88	401	#line 88 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	88	401	#line 88 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	89	401		mov __signed_stack_003drive, __drive_7qG2_degrees_7qG2_001
+2	88	403	#line 88 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	88	403	#line 88 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	89	403		set __D0drive, 0
+2	91	406	#line 91 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	92	406		acquire __TextOutMutex
+2	91	407	#line 91 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	92	407		mov __TextOutArgs.Location.X, __signed_stack_001drive
+2	91	409	#line 91 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	92	409		mov __TextOutArgs.Location.Y, __signed_stack_002drive
+2	91	411	#line 91 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	92	411		mov __TextOutArgs.Options, __D0drive
+2	91	413	#line 91 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	92	413		numtostr __TextOutArgs.Text, __signed_stack_003drive
+2	91	416	#line 91 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	92	416		syscall 13, __TextOutArgs
+2	91	419	#line 91 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	92	419		mov __D0drive, __TextOutArgs.Result
+2	91	421	#line 91 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	92	421		release __TextOutMutex
+2	91	422	#line 91 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	91	422	#line 91 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	92	422		set __Wait_7qG2_ms_7qG2_000_inline_drive, 200
+2	91	425	#line 91 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	7921	425	#line 7921 "NXCDefs.h"
+2	7922	425		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_drive
+2	7921	428	#line 7921 "NXCDefs.h"
+2	93	428	#line 93 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	95	428	#line 95 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	96	428		add count, count, __constVal1
+2	95	432	#line 95 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	96	432	#line 96 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	97	432		release moveMutex
+2	96	433	#line 96 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	98	433	#line 98 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	99	433		jmp __NXC_Label_524
+2	98	435	#line 98 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+2	99	435		exit -1, -1
+3	104	0	#line 104 "C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc"
+3	105	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc
 1	button	5	C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc
 2	drive	127	C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc
-3	__initialize_global_data	499	C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc
+3	__initialize_global_data	565	C:\Users\sarnil17\Documents\Dokument\CruiseC\CruiseC\Main v.1.nxc

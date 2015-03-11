@@ -7,13 +7,15 @@
 //#define FULL_SPEED 60
 #define DEG_TO_CMPM 166.6667*0.175 // converts degrees per millisecond to CMPM
 int setpoint;
-float error_area = 0;
-float prev_error = 0;
+int d_count = 3;
+int count;
+float error_area;
+float prev_error;
 float error;
 float d_error;
 long prev_time;
 long out;
-long prev_degrees = 0;
+long prev_degrees;
 mutex moveMutex;
 
 task button()
@@ -32,7 +34,7 @@ while (true)
    }
    ClearLine(LCD_LINE3);
    NumOut(0, LCD_LINE3, setpoint, false);
-   Wait (MS_100);
+   Wait (MS_200);
    Release(moveMutex);
    }
 }
@@ -42,44 +44,60 @@ task drive()
  {
    Acquire(moveMutex);
 
-   //Hast.räknare
+//Hast.räknare
    long time = CurrentTick() - prev_time;
    long degrees = MotorRotationCount(MOTOR) - prev_degrees;
    float cmpm = degrees*DEG_TO_CMPM/time;
-   ClearLine(LCD_LINE2);
-   NumOut(0, LCD_LINE2, cmpm , false);
-   TextOut(50, LCD_LINE2, "m/min", false);
+
    prev_time = CurrentTick();
    prev_degrees = MotorRotationCount(MOTOR);
    
-   //Reglering
-
+//Reglering
    error = setpoint - cmpm;
    error_area += error * time;
-   d_error = prev_error - error;
+ //Störningar påverkar inte
+   if (count <= d_count)
+   {
+    d_error = prev_error - error;                                                               // update display every 0.1 seconds
+    prev_error = error;
+    count = 0;
+   }
+   
+   out = 5.5 * error + (1/50) * error_area + 100 * (d_error/(d_count*time));
+
+   //Om det överskrider maximala motorstyrkan
+   if (out < 100)
+   {
+    OnFwd(OUT_AC, out);
+   }
+   else
+   {
+    OnFwd (OUT_AC, 100);
+    error_area -= error * time;
+    out = 100;
+   }
+//Visa på display
+   ClearLine(LCD_LINE2);
+   NumOut(0, LCD_LINE2, cmpm , false);
+   TextOut(50, LCD_LINE2, "m/min", false);
    ClearLine(LCD_LINE4);
    NumOut(0, LCD_LINE4, error, false);
    ClearLine(LCD_LINE5);                                       //bugtest
    NumOut(0, LCD_LINE5, error_area, false);
-   out = 1.9 * error + (1/110) * error_area + 0,1 * (d_error/time) + 1;
-   if (out < 100)
-   {
-    OnFwdReg(OUT_AC, out, OUT_REGMODE_SYNC);
-   }
-   else
-   {
-    OnFwdReg (OUT_AC, 100, OUT_REGMODE_SYNC);
-    out = 100;
-   }
-   Wait(MS_500);                                                                // update display every 0.1 seconds
-   prev_error = error;
    ClearLine(LCD_LINE6);
    NumOut(0, LCD_LINE6, out, false);
+   ClearLine(LCD_LINE7);
+   NumOut(0, LCD_LINE7, degrees, false);
+
+
+   Wait(MS_200);
+
+   count ++;
 
    Release(moveMutex);
  }
 }
 task main()
-{
- Precedes(button, drive);
-}
+ {
+  Precedes(button, drive);
+ }
