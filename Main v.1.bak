@@ -8,9 +8,10 @@
 //#define FULL_SPEED 60
 #define DEG_TO_MPM 166.6667*0.175 // converts degrees per millisecond to CMPM
 int setpoint;
-int d_count = 3;
+int d_count = 5;
 int count;
 long prev_time;
+float mpm_medel;
 long prev_degrees_A;
 float error_A;
 float error_area_A;
@@ -39,8 +40,7 @@ while (true)
     Acquire(moveMutex);
     setpoint += 1;
    }
-   ClearLine(LCD_LINE3);
-   NumOut(0, LCD_LINE3, setpoint, false);
+
    Wait (MS_200);
    Release(moveMutex);
    }
@@ -62,6 +62,8 @@ task drive()
    float mpm_B = degrees_B*DEG_TO_MPM/time;
    prev_time = CurrentTick();
    prev_degrees_B = MotorRotationCount(MOTOR_B);
+   
+   mpm_medel = (mpm_A+mpm_B)/2;
    
 //Reglering för motor A
    error_A = setpoint - mpm_A;
@@ -114,8 +116,11 @@ task drive()
    }
 //Visa på display
    ClearLine(LCD_LINE2);
-   NumOut(0, LCD_LINE2, mpm_A , false);
+   NumOut(0, LCD_LINE2, mpm_medel , false);
    TextOut(50, LCD_LINE2, "m/min", false);
+   ClearLine(LCD_LINE3);
+   NumOut(0, LCD_LINE3, setpoint, false);
+   TextOut(50, LCD_LINE3, "m/min", false);
  /*  ClearLine(LCD_LINE4);
    NumOut(0, LCD_LINE4, error, false);
    ClearLine(LCD_LINE5);                                       //bugtest
@@ -123,12 +128,12 @@ task drive()
    ClearLine(LCD_LINE6);
    NumOut(0, LCD_LINE6, out, false);
    ClearLine(LCD_LINE7);
-   NumOut(0, LCD_LINE7, degrees, false); */
+   NumOut(0, LCD_LINE7, degrees, false);
    ClearLine(LCD_LINE8);
-   NumOut(0, LCD_LINE8, mpm_B, false);
+   NumOut(0, LCD_LINE8, mpm_B, false);   */
 
 
-   Wait(MS_200);
+   Wait(MS_100);
 
    count ++;
 

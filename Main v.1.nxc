@@ -115,12 +115,14 @@ task drive()
     out_B = 100;
    }
 //Visa på display
+   TextOut(10, LCD_LINE1, "Actual", false);
    ClearLine(LCD_LINE2);
    NumOut(0, LCD_LINE2, mpm_medel , false);
    TextOut(50, LCD_LINE2, "m/min", false);
-   ClearLine(LCD_LINE3);
-   NumOut(0, LCD_LINE3, setpoint, false);
-   TextOut(50, LCD_LINE3, "m/min", false);
+   TextOut(10, LCD_LINE4, "Setpoint", false);
+   ClearLine(LCD_LINE5);
+   NumOut(0, LCD_LINE5, setpoint, false);
+   TextOut(50, LCD_LINE5, "m/min", false);
  /*  ClearLine(LCD_LINE4);
    NumOut(0, LCD_LINE4, error, false);
    ClearLine(LCD_LINE5);                                       //bugtest
