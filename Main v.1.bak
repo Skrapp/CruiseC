@@ -48,7 +48,6 @@ task drive()
    long time = CurrentTick() - prev_time;
    long degrees = MotorRotationCount(MOTOR) - prev_degrees;
    float cmpm = degrees*DEG_TO_CMPM/time;
-
    prev_time = CurrentTick();
    prev_degrees = MotorRotationCount(MOTOR);
    
@@ -63,7 +62,7 @@ task drive()
     count = 0;
    }
    
-   out = 5.5 * error + (1/50) * error_area + 100 * (d_error/(d_count*time));
+   out = 6.5 * error + (1/50) * error_area + 10 * (d_error/(d_count*time));
 
    //Om det överskrider maximala motorstyrkan
    if (out < 100)
