@@ -3,19 +3,26 @@
 // Requires NXT firmware 1.28 or later (uses floating point arithmetic).
 // CurrentTick returns milliseconds in a long integer.
 // MotorRotationCount returns degrees in a long integer.
-#define MOTOR OUT_A
+#define MOTOR_A OUT_A
+#define MOTOR_B OUT_C
 //#define FULL_SPEED 60
-#define DEG_TO_CMPM 166.6667*0.175 // converts degrees per millisecond to CMPM
+#define DEG_TO_MPM 166.6667*0.175 // converts degrees per millisecond to CMPM
 int setpoint;
 int d_count = 3;
 int count;
-float error_area;
-float prev_error;
-float error;
-float d_error;
 long prev_time;
-long out;
-long prev_degrees;
+long prev_degrees_A;
+float error_A;
+float error_area_A;
+float prev_error_A;
+float d_error_A;
+long out_A;
+long prev_degrees_B;
+float error_B;
+float error_area_B;
+float prev_error_B;
+float d_error_B;
+long out_B;
 mutex moveMutex;
 
 task button()
@@ -46,47 +53,79 @@ task drive()
 
 //Hast.räknare
    long time = CurrentTick() - prev_time;
-   long degrees = MotorRotationCount(MOTOR) - prev_degrees;
-   float cmpm = degrees*DEG_TO_CMPM/time;
+ //hastigheten för motor A
+   long degrees_A = MotorRotationCount(MOTOR_A) - prev_degrees_A;
+   float mpm_A = degrees_A*DEG_TO_MPM/time;
+   prev_degrees_A = MotorRotationCount(MOTOR_A);
+ //hastigheten för motor B
+   long degrees_B = MotorRotationCount(MOTOR_B) - prev_degrees_B;
+   float mpm_B = degrees_B*DEG_TO_MPM/time;
    prev_time = CurrentTick();
-   prev_degrees = MotorRotationCount(MOTOR);
+   prev_degrees_B = MotorRotationCount(MOTOR_B);
    
-//Reglering
-   error = setpoint - cmpm;
-   error_area += error * time;
+//Reglering för motor A
+   error_A = setpoint - mpm_A;
+   error_area_A += error_A * time;
  //Störningar påverkar inte
    if (count <= d_count)
    {
-    d_error = prev_error - error;                                                               // update display every 0.1 seconds
-    prev_error = error;
+    d_error_A = prev_error_A - error_A;                                                               // update display every 0.1 seconds
+    prev_error_A = error_A;
     count = 0;
    }
    
-   out = 6.5 * error + (1/50) * error_area + 10 * (d_error/(d_count*time));
+   out_A = 6.5 * error_A + (1/50) * error_area_A + 10 * (d_error_A/(d_count*time));
 
    //Om det överskrider maximala motorstyrkan
-   if (out < 100)
+   if (out_A < 100)
    {
-    OnFwd(OUT_AC, out);
+    OnFwd(MOTOR_A, out_A);
    }
    else
    {
-    OnFwd (OUT_AC, 100);
-    error_area -= error * time;
-    out = 100;
+    OnFwd (MOTOR_A, 100);
+    error_area_A -= error_A * time;
+    out_A = 100;
+   }
+   
+//Reglering för motor B
+   error_B = setpoint - mpm_B;
+   error_area_B += error_B * time;
+ //Störningar påverkar inte
+   if (count <= d_count)
+   {
+    d_error_B = prev_error_B - error_B;                                                               // update display every 0.1 seconds
+    prev_error_B = error_B;
+    count = 0;
+   }
+
+   out_B = 6.5 * error_B + (1/50) * error_area_B + 10 * (d_error_B/(d_count*time));
+
+   //Om det överskrider maximala motorstyrkan
+   if (out_B < 100)
+   {
+    OnFwd(MOTOR_B, out_B);
+   }
+   else
+   {
+    OnFwd (MOTOR_B, 100);
+    error_area_B -= error_B * time;
+    out_B = 100;
    }
 //Visa på display
    ClearLine(LCD_LINE2);
-   NumOut(0, LCD_LINE2, cmpm , false);
+   NumOut(0, LCD_LINE2, mpm_A , false);
    TextOut(50, LCD_LINE2, "m/min", false);
-   ClearLine(LCD_LINE4);
+ /*  ClearLine(LCD_LINE4);
    NumOut(0, LCD_LINE4, error, false);
    ClearLine(LCD_LINE5);                                       //bugtest
    NumOut(0, LCD_LINE5, error_area, false);
    ClearLine(LCD_LINE6);
    NumOut(0, LCD_LINE6, out, false);
    ClearLine(LCD_LINE7);
-   NumOut(0, LCD_LINE7, degrees, false);
+   NumOut(0, LCD_LINE7, degrees, false); */
+   ClearLine(LCD_LINE8);
+   NumOut(0, LCD_LINE8, mpm_B, false);
 
 
    Wait(MS_200);
